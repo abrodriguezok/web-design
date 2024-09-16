@@ -4,9 +4,9 @@ body {
     background-color: #2e0d03e6;
   }
   
-  nav{
+  nav {
     display: flex;
-    background-color: #2e0d03e6;
+    background-color: #2e0d03e8;
     text-align: center;
     position: fixed;
     z-index: 1000;
@@ -35,7 +35,7 @@ body {
   }
   
   .menu li {
-    padding: 0 65px;
+    padding: 0 82.5px;
     color: #ff000000;
     
   }
@@ -49,49 +49,86 @@ body {
   }
   
   .menu a:hover {
-    text-decoration: overline;
+    text-decoration: underline;
     color: rgb(19, 108, 150);
   }
 
   /*formulario*/
 
-  #div-formulario{
-    padding-top: 115px;
-    padding-bottom: 54px;
-  }
-  
   .formulario {
-    position: absolute;
-    text-align: center; 
-    width: 50%;
-    background: rgb(255, 255, 255);
-    color: white;
+    z-index: 1;
+    width: 47%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 10px rgba(139, 139, 139, 0.242);
+    transform: translate(52%,-130%)
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.form-group {
+    width: calc(45% - 10px);
+}
+
+.full-width {
+    width: 44%;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 17px;
+    color: #000000;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    width: 220%;
+    padding: 12px;
+    border: 1px solid #a3a2a28a;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+textarea {
+    height: 50px;
+    resize: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+.btn {
+    width: 100%;
     padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(144, 144, 144);
-    margin: 0 auto;
-    z-index: 900;
-    transform: translate(50%,-230%)
-  }
+    background-color: #2e0d03e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-  label{
-    color: rgb(0, 0, 0);
-  }
-
-  button{
-    color: rgb(0, 0, 0);
-  }
-  
+.btn:hover {
+    background-color: #515151;
+}
 
   /* VIDEO GRANOS DE CAFE */
 
   #contenedor-video {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: abosl;
     width: 100%;
     overflow: visible;
-    height: 800px;
+    height: 717px;
     z-index: -1;
     object-fit: cover
   }
