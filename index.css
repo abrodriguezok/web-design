@@ -213,7 +213,7 @@ a {
 footer {
   background-color: #2e0d03;
   text-align: left;
-  padding: 20px;
+  padding: 1px;
   color: #ffffff;
 }
 
@@ -230,4 +230,12 @@ footer {
   border-radius: 50px;
   transition: transform 0.3s;
   scale: 1;
+}
+
+.redes-footer {
+  padding: 10px;
+  border-radius: 50px;
+  transition: transform 0.3s;
+  scale: 1;
+  text-align: right;
 }
