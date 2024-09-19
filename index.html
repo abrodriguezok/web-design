@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="index.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gowun+Batang:wght@400;700&family=Ms+Madi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav>
         <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li class="logo">
-                <img src="" width="200" alt="Logo">
+            <li><a href="productos.html">Productos</a></li>
+            <li id="logo">
+                <img src="imagenes-index/logo.png" width="200" alt="Logo">
             </li>
             <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
@@ -26,6 +34,41 @@
             <video src="videos-index/videoindex.mp4" autoplay muted loop></video>
         </div>
 
+        <div id="PRODUCTOS">
+            <h2 style="text-align: center;">Productos</h2>
+            <section class="Productos-grid">
+                <article class="productos">
+                    <img src="imagenes-index/comida.png" alt="Café" class="producto-imagen">
+                    <h3> Nuestras delicias </h3>
+                    <p> Tenesmos una gran variedad de bocadillos para 
+                        acompañar nuestros café de especialidad.
+                    </p>
+                </article>
+                <article class="productos">
+                    <img src="imagenes-index/Break.png" alt="Café Robusta" class="producto-imagen">
+                    <h3>Café Robusta</h3>
+                    <p> Nuestro café Robusta es uno de los más elegidos para
+                        llevar a casa. Su aroma es incomparable.
+                    </p>
+                </article>
+                <article class="productos">
+                    <img src="imagenes-index/granos2.png" alt="Café Etiopía" class="producto-imagen">
+                    <h3>Café Etiopía</h3>
+                    <p>Este café es especial  bebidas frías. Si sos amante de 
+                        nuestros Cold Brew, ya lo probaste.
+                    </p>
+                </article>
+            </section>
+
+            <section class="formulario2" >
+                <article class="formulario-2" >
+                    <form action="/ver-productos" method="post">
+                        <button type="button" id="boton" href="productos.html">VER PRODUCTOS</button>
+                    </form>
+                </article>
+            </section>
+        </div>
+
         <div id="nuestros-favoritos">
             <h2 style="text-align: center;">Nuestros favoritos</h2>
             <section class="Productosfavoritos">
@@ -34,24 +77,21 @@
                     <h3>Latte</h3>
                     <a>Un latte con café de especialidad comienza con un espresso rico y matizado, 
                         hecho de granos de alta calidad. Se le añade leche texturizada hasta obtener 
-                        una espuma cremosa y sedosa. El resultado es una bebida suave y equilibrada, 
-                        con una mezcla armoniosa de sabores complejos y una textura aterciopelada. </a>
+                        una espuma cremosa y sedosa. </a>
                 </article>
                 <article class="producto">
                     <img src="imagenes-index/cafe3.jpg" alt="Café Robusta" class="producto-imagen">
                     <h3>Cold Brew</h3>
                     <a> Un cold brew con café de especialidad es un café concentrado y suave, 
                         hecho al remojar granos de alta calidad en agua fría por 12 a 24 horas. 
-                        El resultado es una bebida refrescante, con un sabor profundo y menos ácido, 
-                        con matices variados que pueden incluir frutas, nueces o chocolate.</a>
+                        </a>
                 </article>
                 <article class="producto">
                     <img src="imagenes-index/cafe2.jpg" alt="Café Etiopía" class="producto-imagen">
                     <h3>Capuccino</h3>
                     <a>Un cappuccino con café de especialidad combina un espresso intenso con 
                         leche vaporizada y espuma cremosa. Ofrece un equilibrio perfecto entre 
-                        la riqueza del café y la suavidad de la leche, con una textura aterciopelada 
-                        y un sabor complejo.</a>
+                        la riqueza del café y la suavidad de la leche.</a>
                 </article>
             </section>
 
@@ -63,22 +103,29 @@
                 <article>
                     <video src="videos-index/videobarista.mp4" autoplay muted loop class="video-baristas"></video>
                 </article>
-                <a class="parrafo-video">En CoffeeBreak, nuestra escuela de baristas te enseña todo lo que necesitas saber sobre
-                   el arte del café. Ofrecemos formación práctica en la preparación de espresso, técnicas de leche 
-                   y creación de bebidas, adecuada para todos los niveles. 
-                   Aprende de nuestros expertos y lleva tu pasión por el café al siguiente 
-                   nivel en CoffeeBreak.</a>
             </section>
         </div>
     </main>
 
 
     <footer>
-        <h3>INSTAGRAM</h3>
-        <h3>WHATSAPP</h3>
-        <h3>INSTAGRAM</h3>
-        <h3>NUMERO</h3>
-        <h4>© 2024, Coffe Break</h4>
+    <section class="footer-contenedor">     
+        <article class="logo-footer">
+            <img src="imagenes-index/logo.png" alt="logofooter" width="300"  >
+        </article>
+
+        <article class="logo-footer">
+            <img src="iconos/instagram.png" width="40" alt="Logo">  
+            <a style="text-align: middle;">@instagram</a>
+            <br>
+
+            <img src="iconos/whatsapp.png" width="40" alt="Logo">
+            <a style="text-align: middle;">@instagram</a>
+            <br>
+
+        </article>
+    </section>
+    <h4 style="text-align: center;">© 2024, Coffe Break</h4>
     </footer>
 </body>
 

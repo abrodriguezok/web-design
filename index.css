@@ -1,12 +1,18 @@
 body {
   margin: 0;
   border-color: #8c735cb7;
-  background-color: #ffffff;
+  background-color: #000000;
+  font-family: "Gowun Batang", serif;
+}
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+  
 }
 
 nav {
   display: flex;
-  background-color: #2e0d03e8;
+  background-color: #2e0d03;
   text-align: center;
   position: fixed;
   z-index: 1000;
@@ -15,6 +21,8 @@ nav {
   justify-content: center;
   top: 0;
   padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(250, 250, 250, 0.521);
+  
 }
 
 .menu {
@@ -50,7 +58,68 @@ nav {
 
 .menu a:hover {
   text-decoration: underline;
-  color: rgb(19, 108, 150);
+  color: rgb(156, 218, 247);
+}
+
+/*PRODUCTOS*/
+
+.Productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.productos {
+  background-color: #0b00a10a;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.618);
+  transition: transform 0.3s;
+  scale: 1;
+}
+
+.productos h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+  color: #fdfdfd;
+}
+
+.productos p {
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+
+.producto-imagen {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+  color: #be4646;
+}
+
+
+.producto p {
+  color: #ffffff;
+  font-size: 2em;
+}
+
+#boton {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(243, 243, 243, 0.219);
+  width: 15%;
+  font-size: 1em;
+}
+
+.formulario2 {
+  text-align: center;
+  
 }
 
 
@@ -62,23 +131,15 @@ nav {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 800px;
+  
   box-shadow: #413131;
 }
 
-.parrafo-video{
-  font-size: 1.2em;
-  padding-top: 20px;
-  
-}
-
-
 /* NUESTROS FAVORITOS */
-
 
 h2{
   font-size: 3em;
-  color: #265faa;
+  color: #4381d1;
 }
 
 #nuestros-favoritos {
@@ -96,16 +157,23 @@ h2{
 
 .producto-imagen {
   max-width: 85%;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.618);
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(95, 95, 95, 0.618);
 
 }
 
 .producto h3 {
   margin: 10px 0 5px;
   font-size: 2em;
-  color: #265faa;
+  color: #eb8ee6;
 }
+
+.productos h3 {
+  margin: 10px 0 5px;
+  font-size: 2em;
+  color: #eb8ee6;
+}
+
 
 .producto p {
   color: #fcf9f9;
@@ -115,6 +183,7 @@ h2{
 a {
   font-size: 1.2em;
   padding: 50px;
+  color: #ffffff;
 }
 
 /* VIDEO BARISTA */
@@ -126,10 +195,11 @@ a {
 
 .video-contenedor {
   width: 50%;
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.618);
+  box-shadow: 0 4px 8px rgba(160, 232, 245, 0.618);
   margin: 0 auto;
+  background-color: #190eb90a;
 }
 
 .video-baristas {
@@ -141,11 +211,23 @@ a {
 /* FOOTER */
 
 footer {
-  background-color: #2e0d03e8;
-  text-align: center;
+  background-color: #2e0d03;
+  text-align: left;
   padding: 20px;
+  color: #ffffff;
 }
 
-footer {
-  color: #ffffff;
+.footer-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+  padding: 1px;
+  text-align: left;
+}
+
+.logo-footer {
+  padding: 10px;
+  border-radius: 50px;
+  transition: transform 0.3s;
+  scale: 1;
 }

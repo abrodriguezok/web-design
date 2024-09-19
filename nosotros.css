@@ -1,12 +1,20 @@
 body {
   margin: 0;
   border-color: #8c735cb7;
-  background-color: #ffffff;
+  background-color: #000000;
+  font-family: "Gowun Batang", serif;
 }
 
-nav{
+h1 {
+  font-family: "Playfair Display", serif;
+  color: #eb8ee6;
+  text-align: right;
+  
+}
+
+nav {
   display: flex;
-  background-color: #2e0d03e8;
+  background-color: #2e0d03;
   text-align: center;
   position: fixed;
   z-index: 1000;
@@ -15,6 +23,8 @@ nav{
   justify-content: center;
   top: 0;
   padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(250, 250, 250, 0.521);
+  
 }
 
 .menu {
@@ -49,8 +59,8 @@ nav{
 }
 
 .menu a:hover {
-  text-decoration: overline;
-  color: rgb(19, 108, 150);
+  text-decoration: underline;
+  color: rgb(156, 218, 247);
 }
 
 /*HISTORIA* PRIMER DIV */
@@ -64,21 +74,22 @@ nav{
   display: grid;
   padding-left: 100px;
   padding-right: 100px;
+  align-items: center;
 }
 
 .granos {
   display: flex;
   align-items: center; 
-
   background-color: #2e1f0c00;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(126, 126, 126, 0.618);
+
 }
 
 .granos-imagen{
   display: flex;
-  border-radius: 8px;
+  border-radius: 80px;
   max-width: 25%; 
   image-orientation: flip;
   padding: 30px;
@@ -87,16 +98,21 @@ nav{
 #texto-descripcion {
   margin: 0;
   margin-left: 10px; 
+  margin-top: 20%;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
 }
 
 #segundo-div {
   padding-bottom: 100px;
 }
 
+
 /* FOOTER */
 
 footer {
-  background-color: #2e0d03e8;
+  background-color: #2e0d03;
   text-align: center;
   padding: 20px;
   color: #ffffff;
