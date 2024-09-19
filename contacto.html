@@ -33,26 +33,29 @@
         </section>
         <div id="formulario">
             <section class="formulario">
-                <article class="formulario-1">
-                    <form action="/enviar-formulario" method="post">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="Nombre" required>
-                        <br><br>
-
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" required>
-                        <br><br>
-
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+                    <form action="/enviar-formulario" method="POST" class="form"></form>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Ingrese su Nombre completo" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="name">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Ingrese su Email" required>
+                        </div>
                         
-                        <br><br>
-
-                        <input type="checkbox" id="suscribir" name="suscribir">
-                        <label for="suscribir">¡Quiero recibir novedades de Coffee Break! </label>
-                        <br><br>
-
-                        <button type="submit">Enviar</button>
+                        <div class="form-group full-width">
+                            <label for="message">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Hola, queria contactarlos..." required></textarea>
+                        </div>
+                
+                        <div class="form-group full-width">
+                            <label>
+                                <input type="checkbox" name="terms" required> Suscribirme a las novedades</a>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn">Enviar</button>
                     </form>
                 </article>
             </section>
@@ -60,10 +63,17 @@
     </div>
 
     <footer>
-        <h4>© 2024, Coffe Break</h4>
+        <section class="footer-contenedor">     
+            <article class="logo-footer">
+                <img src="imagenes-index/logo.png" alt="logofooter" width="200"  >
+            </article>
+            <article class="texto-copy"><h4 style="text-align: center;">© 2024, Coffe Break</h4></article>
+            <article class="redes-footer">
+                <a class="boton-social" href="https://www.instagram.com/"><img src="iconos/pngegg.png" width="55" alt="Logo"></a>
+                <a class="boton-social" href="https://web.whatsapp.com/"><img src="iconos/pngegg (1).png" width="48" alt="Logo"></a>
+            </article>
+        </section>
     </footer>
-
-
 </body>
 
 </html>

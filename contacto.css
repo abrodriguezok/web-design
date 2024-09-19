@@ -65,50 +65,129 @@ nav {
 
   #div-formulario{
     padding-top: 115px;
-    padding-bottom: 54px;
+    padding-bottom: -5px;
   }
   
+    /*formulario*/
+
   .formulario {
-    position: absolute;
-    text-align: center; 
-    width: 50%;
-    background: rgb(255, 255, 255);
-    color: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(144, 144, 144);
-    margin: 0 auto;
-    z-index: 900;
-    transform: translate(50%,-230%)
-  }
-
-  label{
-    color: rgb(0, 0, 0);
-  }
-
-  button{
-    color: rgb(0, 0, 0);
+    z-index: 1;
+    width: 47%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 10px rgba(139, 139, 139, 0.242);
+    transform: translate(50%,-75%)
   }
   
-
-  /* VIDEO GRANOS DE CAFE */
-
+  .form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  }
+  
+  .form-group {
+    width: calc(45% - 10px);
+  }
+  
+  .full-width {
+    width: 44%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 17px;
+    color: #000000;
+  }
+  
+  input[type="email"],
+  input[type="text"],
+  textarea {
+    width: 220%;
+    padding: 12px;
+    border: 1px solid #a3a2a28a;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  
+  textarea {
+    height: 50px;
+    resize: none;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 4px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e0d03e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #515151;
+  }
+  
+    /* VIDEO GRANOS DE CAFE */
+  
   #contenedor-video {
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: abosl;
     width: 100%;
     overflow: visible;
-
+    height: 484px;
+    z-index: -1;
     object-fit: cover
   }
-  
+    
   /* FOOTER */
 
-footer {
-  background-color: #2e0d03e8;
-  text-align: center;
-  padding: 20px;
-  color: #ffffff;
+  footer {
+    align-items: center;
+    background-color: #2e0d03;
+    text-align: center;
+    padding: 1px;
+    color: #ffffff;
+  }
   
-}
+  .boton-social{
+    width: auto;
+  }
+  
+  
+  .footer-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 1px;
+    text-align: left;
+  }
+  
+  
+  .logo-footer {
+    padding: 10px;
+    border-radius: 50px;
+    transition: transform 0.3s;
+    scale: 1;
+  }
+  
+  .texto-copy{
+    padding-top: 8%;
+  }
+  
+  .redes-footer {
+    padding: 40px;
+    border-radius: 50px;
+    transition: transform 0.3s;
+    scale: 1;
+    text-align: right;
+  }
+  

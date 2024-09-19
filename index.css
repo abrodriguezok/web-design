@@ -17,7 +17,7 @@ nav {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  height: 75px;
+  height: 71px;
   justify-content: center;
   top: 0;
   padding: 20px 0;
@@ -43,7 +43,7 @@ nav {
 }
 
 .menu li {
-  padding: 0 45px;
+  padding: px;
   color: #ff000000;
   
 }
@@ -110,16 +110,32 @@ nav {
   font-size: 2em;
 }
 
-#boton {
-  padding: 20px;
+#button {
+  padding: 0px;
   box-shadow: 0 4px 8px rgba(243, 243, 243, 0.219);
   width: 15%;
   font-size: 1em;
 }
 
-.formulario2 {
+.formulario-2{
+  padding: 20px;
   text-align: center;
-  
+}
+
+.button{
+  border: none; 
+  color: black; 
+  padding: 14px 28px; 
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #ffffffcd; 
+  border: 2px solid #be4646;
+}
+
+.button:hover {
+  background: #ffffff; 
+  color: #636363;
 }
 
 
@@ -211,19 +227,26 @@ a {
 /* FOOTER */
 
 footer {
+  align-items: center;
   background-color: #2e0d03;
-  text-align: left;
+  text-align: center;
   padding: 1px;
   color: #ffffff;
 }
 
+.boton-social{
+  width: auto;
+}
+
+
 .footer-contenedor {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 30px;
+  gap: 20px;
   padding: 1px;
   text-align: left;
 }
+
 
 .logo-footer {
   padding: 10px;
@@ -232,8 +255,12 @@ footer {
   scale: 1;
 }
 
+.texto-copy{
+  padding-top: 8%;
+}
+
 .redes-footer {
-  padding: 10px;
+  padding: 40px;
   border-radius: 50px;
   transition: transform 0.3s;
   scale: 1;
