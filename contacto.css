@@ -64,7 +64,7 @@ nav {
   /*formulario*/
 
   #div-formulario{
-    padding-top: 115px;
+    padding-top: 120px;
     padding-bottom: -5px;
   }
   
@@ -72,12 +72,12 @@ nav {
 
   .formulario {
     z-index: 1;
-    width: 47%;
+    width: 50%;
     background-color: #ffffff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 8px 10px rgba(139, 139, 139, 0.242);
-    transform: translate(50%,-75%)
+    transform: translate(49%,-5%)
   }
   
   .form {
@@ -87,11 +87,11 @@ nav {
   }
   
   .form-group {
-    width: calc(45% - 10px);
+    width: calc(55% - 10px);
   }
   
   .full-width {
-    width: 44%;
+    width: 53.7%;
   }
   
   label {
@@ -104,7 +104,7 @@ nav {
   input[type="email"],
   input[type="text"],
   textarea {
-    width: 220%;
+    width: 180%;
     padding: 12px;
     border: 1px solid #a3a2a28a;
     border-radius: 5px;
@@ -112,7 +112,7 @@ nav {
   }
   
   textarea {
-    height: 50px;
+    height: 60px;
     resize: none;
   }
   
@@ -140,10 +140,10 @@ nav {
   #contenedor-video {
     display: flex;
     flex-direction: column;
-    position: abosl;
+    position: flex;
     width: 100%;
     overflow: visible;
-    height: 484px;
+    height: 200px;
     z-index: -1;
     object-fit: cover
   }
@@ -154,7 +154,7 @@ nav {
     align-items: center;
     background-color: #2e0d03;
     text-align: center;
-    padding: 100px;
+    padding: 75px;
     color: #ffffff;
   }
   
@@ -166,25 +166,25 @@ nav {
   .footer-contenedor {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 20px;
+    gap: 10px;
     padding: 1px;
     text-align: left;
   }
   
   
   .logo-footer {
-    padding: 10px;
+    padding-top: 140px;
     border-radius: 50px;
     transition: transform 0.3s;
     scale: 1;
   }
   
   .texto-copy{
-    padding-top: 8%;
+    padding-top: 170px;
   }
   
   .redes-footer {
-    padding: 40px;
+    padding-top: 170px;
     border-radius: 50px;
     transition: transform 0.3s;
     scale: 1;
