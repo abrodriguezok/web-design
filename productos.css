@@ -82,10 +82,9 @@ body {
   }
   
   .producto-imagen {
-    max-width: 85%;
-    border-radius: 30px;
+    max-width: 100%;
+    border-radius: 40px;
     box-shadow: 0 4px 8px rgba(95, 95, 95, 0.618);
-  
   }
   
   .producto h3 {

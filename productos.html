@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <nav>
         <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
@@ -55,7 +56,7 @@
             <h2 style="text-align: center;">Variedad de Café </h2>
             <section class="Productosfavoritos">
                 
-                <article class="producto"><
+                <article class="producto">
                     <img src="imagenes-index/cafe1.jpg" alt="Café Clásico" class="producto-imagen">
                     <h3>Latte</h3>
                 </article>
@@ -96,8 +97,24 @@
                     
                 </article>
             </section>
-
         </div>
+
+        <script>
+            $(document).ready(function() {
+              $(".producto-imagen").hover(
+                function() {
+                  $(this).css({
+                    "transform": "scale(0.8)",
+                    "transition": "transform 0.3s ease"
+                  });
+                },
+                function() {
+                  $(this).css("transform", "scale(1)");
+                }
+              );
+            });
+          </script>
+
     </main>
 
 
