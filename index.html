@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="index.css">
   
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="productos.html">Productos</a></li>
             <li id="logo">
-                <img src="imagenes-index/logo.png" width="200" alt="Logo">
+                <a href="index.html"><img src="imagenes-index/logo.png" width="200" alt="Logo"></a>
             </li>
             <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
@@ -106,6 +107,29 @@
                 </article>
             </section>
         </div>
+
+        <script>
+            $(document).ready(function() {
+                // Cuando el mouse pasa sobre la imagen
+                $(".producto-imagen").mouseenter(function() {
+                    $(this).css({
+                        "box-shadow": "0 10px 20px rgba(120, 120, 120, 0.800)" 
+                    });
+                });
+    
+                // Cuando el mouse sale de la imagen
+                $(".producto-imagen").mouseleave(function() {
+                    $(this).css({
+                        "box-shadow": "0 4px 8px rgba(95, 95, 95, 0.618)" 
+                    });
+                });
+            });
+        </script>
+
+
+
+
+
     </main>
 
 

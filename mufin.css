@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  border-color: #8c735cb7;
+  background-color: #000000;
+  font-family: "Gowun Batang", serif;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  color: #eb8ee6;
+  text-align: right;
+  
+}
+
+nav {
+  display: flex;
+  background-color: #2e0d03;
+  text-align: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 75px;
+  justify-content: center;
+  top: 0;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(250, 250, 250, 0.521);
+  
+}
+
+.menu {
+  display: flex;
+  justify-content: center; /* Centra el contenido del menú horizontalmente */
+  background-color: #ababab00;
+  align-items: center;
+  width: 100;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  color: #413131;
+}
+
+.menu li {
+  padding: 35px;
+  color: #ff000000;
+  
+}
+
+.menu a {
+  color: rgba(255, 0, 0, 0);
+  text-decoration: solid;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  color: rgb(156, 218, 247);
+}
+
+/*HISTORIA* PRIMER DIV */
+
+#primer-div{
+  padding-top: 150px;
+  padding-bottom: 80px;
+  
+}
+
+.historia {
+  display: grid;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  
+}
+
+.granos {
+  display: flex;
+  align-items: center; 
+  background-color: #2e1f0c00;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(227, 220, 238, 0.618);
+
+}
+
+.imagen1{
+  display: flex;
+  border-radius: 200px;
+  max-width: 25%; 
+  image-orientation: flip;
+  padding: 30px;
+  
+}
+
+#texto-descripcion {
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+}
+
+#segundo-div {
+  padding-bottom: 100px;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: #2e0d03;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  .menu a {
+    font-size: 1em;
+    padding: 4px 0px;
+  }
+
+  .imagen1{
+    display: none;
+  }
+
+  footer{
+  padding: 21.9%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    
+  .menu a {
+    font-size: 1em;
+    padding: 4px 0px;
+  }
+}

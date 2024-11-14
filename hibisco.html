@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Té de Hibisco</title>
+    <link rel="stylesheet" href="mufin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gowun+Batang:wght@400;700&family=Ms+Madi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li class="logo">
+                <img src="imagenes-index/logo.png" width="200" alt="Logo">
+            </li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="primer-div">
+            <section class="historia">
+                <h1 style="text-align: left;">Té de Hibisco</h1>
+                <article class="granos"> 
+                    <img src="imagenes-productos/hibisco.jpg" alt="Café" class="imagen1">
+                    <img src="imagenes-productos/hibisco1.jpg" alt="Café" class="imagen1">
+                    <p id="texto-descripcion">
+                        En Coffee Break, preparamos el té de hibisco con flores de hibisco de alta calidad,
+                         asegurando que cada taza sea fresca, sabrosa y llena de propiedades naturales.
+                          Si lo prefieres un poco más suave, puedes endulzarlo con un toque de miel o un 
+                          poco de jarabe de agave. Esta bebida es perfecta por sí sola o como acompañante
+                           de nuestros postres y bocados ligeros, ofreciendo una opción deliciosa, 
+                           saludable y refrescante.</p>
+                </article>
+
+            </section>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+              $(".imagen1").hover(
+                function() {
+                  $(this).css({
+                    "transform": "scale(1.2)",
+                    "transition": "transform 0.3s ease"
+                  });
+                },
+                function() {
+                  $(this).css("transform", "scale(1)");
+                }
+              );
+            });
+          </script>
+
+    </main>
+
+    <footer>
+        <h4>© 2024, Coffe Break</h4>
+    </footer>
+</body>

@@ -1,8 +1,9 @@
-body {
+  body {
     margin: 0;
     border-color: #8c735cb7;
     background-color: #000000;
     font-family: "Gowun Batang", serif;
+    overflow-x: hidden;
   }
   
   h1, h2 {
@@ -20,7 +21,7 @@ body {
     height: 75px;
     justify-content: center;
     top: 0;
-    padding: 20px 0;
+    padding: 23px 0;
     box-shadow: 0 4px 8px rgba(250, 250, 250, 0.521);
     
   }
@@ -43,7 +44,7 @@ body {
   }
   
   .menu li {
-    padding: 0 0px;
+    padding: 0%;
     color: #ff000000;
     
   }
@@ -78,7 +79,7 @@ body {
     gap: 20px;
     padding: 20px;
     text-align: center;
-    
+    transform: translate(-3%, 0%);
   }
   
   .producto-imagen {
@@ -113,10 +114,34 @@ body {
 
   /* FOOTER */
 
-footer {
+  footer {
     background-color: #2e0d03;
     text-align: center;
     padding: 20px;
     color: #ffffff;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    #logo {
+      display: none;
+    }
+  
+    .texto-copy{
+      display: none;
+    }
+  
+    .menu a {
+      font-size: 1em;
+      padding: 4px 30px;
+    }
+  
+  }
+
+  @media (min-width: 700px) and (max-width: 1000px) {
     
+    .menu a {
+      font-size: 1em;
+      padding: 4px 30px;
+    }
   }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espresso</title>
+    <link rel="stylesheet" href="mufin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gowun+Batang:wght@400;700&family=Ms+Madi&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li class="logo">
+                <img src="imagenes-index/logo.png" width="200" alt="Logo">
+            </li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="primer-div">
+            <section class="historia">
+                <h1 style="text-align: left;">Los macarons más buscados</h1>
+                <article class="granos"> 
+                    <img src="imagenes-productos/espresso2.jpg" alt="Café" class="imagen1">
+                    <img src="imagenes-productos/espresso3.jpg" alt="Café" class="imagen1">
+                    <p id="texto-descripcion">
+                        El Espresso es la base fundamental de todas nuestras bebidas de café en Coffee Break,
+                         y es ideal para quienes disfrutan de un café fuerte, intenso y concentrado. 
+                         Se elabora a partir de granos de café finamente molidos,
+                          a los que se les aplica una alta presión de agua caliente para extraer todo 
+                          su sabor en un corto período de tiempo, generalmente entre 25 y 30 segundos. 
+                          El resultado es un café denso, con una capa de crema dorada en la superficie, 
+                          que es la esencia de un buen espresso.</p>
+                </article>
+
+            </section>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+              $(".imagen1").hover(
+                function() {
+                  $(this).css({
+                    "transform": "scale(1.2)",
+                    "transition": "transform 0.3s ease"
+                  });
+                },
+                function() {
+                  $(this).css("transform", "scale(1)");
+                }
+              );
+            });
+          </script>
+
+    </main>
+
+    <footer>
+        <h4>© 2024, Coffe Break</h4>
+    </footer>
+</body>
+
+</html>

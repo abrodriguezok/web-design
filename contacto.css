@@ -20,7 +20,7 @@ nav {
   height: 75px;
   justify-content: center;
   top: 0;
-  padding: 20px 0;
+  padding: 22px 0;
   box-shadow: 0 4px 8px rgba(250, 250, 250, 0.521);
   
 }
@@ -43,7 +43,7 @@ nav {
 }
 
 .menu li {
-  padding: 0 45px;
+  padding: 0%;
   color: #ff000000;
   
 }
@@ -64,7 +64,7 @@ nav {
   /*formulario*/
 
   #div-formulario{
-    padding-top: 120px;
+    padding-top: 100px;
     padding-bottom: -5px;
   }
   
@@ -77,7 +77,7 @@ nav {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 8px 10px rgba(139, 139, 139, 0.242);
-    transform: translate(49%,-5%)
+    transform: translate(48%,-5%)
   }
   
   .form {
@@ -191,3 +191,70 @@ nav {
     text-align: right;
   }
   
+
+  @media screen and (max-width: 600px) {
+    .logo {
+      display: none;
+    }
+  
+    .texto-copy{
+      display: none;
+    }
+  
+    .menu a {
+      font-size: 1em;
+      padding: 4px 30px;
+    }
+
+    #contenedor-video{
+      display: none;
+    }
+
+    #div-formulario {
+      padding-top: 200px;
+    }
+
+    .formulario{
+      transform: translate(39%, -5%);
+    }
+  }
+
+
+  @media (min-width: 700px) and (max-width: 1000px) {
+
+    #div-formulario {
+      padding-top: 200px;
+    }
+
+    .formulario{
+      transform: translate(48%, -5%);
+    }
+
+    footer{
+      padding: 9%;
+    }
+
+    #contenedor-video{
+      display: none;
+    }
+
+    .menu a {
+      font-size: 1em;
+      padding: 4px 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    footer{
+      padding: 9%;
+    }
+    .menu a{
+      padding: 4px 49px
+    }
+  }
+
+  @media screen and (min-width: 1001px){
+    .menu a{
+      padding: 4px 49px
+    }
+  }

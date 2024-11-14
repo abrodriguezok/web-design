@@ -20,7 +20,7 @@ nav {
   height: 71px;
   justify-content: center;
   top: 0;
-  padding: 20px 0;
+  padding: 22px 0;
   box-shadow: 0 4px 8px rgba(250, 250, 250, 0.521);
   
 }
@@ -43,7 +43,7 @@ nav {
 }
 
 .menu li {
-  padding: px;
+  padding: 0%;
   color: #ff000000;
   
 }
@@ -266,3 +266,27 @@ footer {
   scale: 1;
   text-align: right;
 }
+
+@media screen and (max-width: 600px) {
+  #logo {
+    display: none;
+  }
+
+  .texto-copy{
+    display: none;
+  }
+
+  .menu a {
+    font-size: 1em;
+    padding: 4px 30px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    
+  .menu a {
+    font-size: 1em;
+    padding: 4px 30px;
+  }
+}
+

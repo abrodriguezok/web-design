@@ -22,7 +22,7 @@ nav {
   height: 75px;
   justify-content: center;
   top: 0;
-  padding: 20px 0;
+  padding: 23px 0;
   box-shadow: 0 4px 8px rgba(250, 250, 250, 0.521);
   
 }
@@ -45,7 +45,7 @@ nav {
 }
 
 .menu li {
-  padding: 35px;
+  padding: 0%;
   color: #ff000000;
   
 }
@@ -118,4 +118,36 @@ footer {
   
 }
 
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  .texto-copy{
+    display: none;
+  }
+
+  .menu a {
+    font-size: 1em;
+    padding: 4px 30px;
+  }
+
+  .granos-imagen{
+    display: none;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    
+  .menu a {
+    font-size: 1em;
+    padding: 4px 30px;
+  }
+}
+
+@media screen and (min-width: 1001px){
+  .menu a{
+    padding: 4px 49px
+  }
+}
 
