@@ -200,6 +200,10 @@ nav {
     .texto-copy{
       display: none;
     }
+
+    footer{
+      padding: 10px;
+    }
   
     .menu a {
       font-size: 1em;
